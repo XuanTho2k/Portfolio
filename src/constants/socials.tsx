@@ -5,7 +5,7 @@ import React from "react";
 export const socials = [
   {
     icon: <FaGithub />,
-    path: "https://www.facebook.com/profile.php?id=100030812870594",
+    path: "https://github.com/XuanTho2k",
   },
   {
     icon: <FaFacebook />,
@@ -13,7 +13,7 @@ export const socials = [
   },
   {
     icon: <FaLinkedinIn />,
-    path: "https://www.facebook.com/profile.php?id=100030812870594",
+    path: "www.linkedin.com/in/thọ-lê-xuân-23122931a",
   },
   {
     icon: <FaTwitter />,

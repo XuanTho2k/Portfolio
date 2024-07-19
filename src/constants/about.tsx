@@ -81,7 +81,7 @@ export const educations = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, laudantium. Quis, vitae odit. Praesentium, doloribus saepe?",
+    "This is my education, where I have embarked on a journey through various specialized courses to deepen my understanding and expertise in software development.",
   items: [
     {
       institution: "Udemy",
@@ -115,7 +115,7 @@ export const educations = {
 export const skills = {
   title: "My skills",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos accusantium tempora perspiciatis exercitationem tempore nemo",
+    "Here are my skills, meticulously honed to craft seamless and dynamic user experiences. Each skill represents a piece of the puzzle in my comprehensive understanding of web development.",
   skillList: [
     {
       icon: <FaHtml5 />,

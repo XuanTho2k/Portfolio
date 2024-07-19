@@ -13,26 +13,28 @@ const Home = () => {
           {/* hero */}
           <div className="text-center order-2 xl:order-none xl:text-left ">
             {/* text */}
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">FullStack Javascript Intern</span>
             <h1 className="h1">
               Hello I&apos;m <br />{" "}
               <span className="text-accent">Le Xuan Tho</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80 ">
-              A Intern pursuing a degree in Software Engineer, driven by a
+            <p className="max-w-[500px] mb-9 text-black/80 ">
+              An Intern pursuing a degree in Software Engineer, driven by a
               passion for innovation and a strong work ethic, aiming to leverage
               my academic knowledge and practical skills.
             </p>
             {/* download & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8 ">
-              <Button
-                variant={"outline"}
-                size={"lg"}
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="./cv.pdf" download="LeXuanTho_CV.pdf">
+                <Button
+                  variant={"outline"}
+                  size={"lg"}
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"

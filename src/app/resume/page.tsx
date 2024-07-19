@@ -37,8 +37,10 @@ const Resume = () => {
             {/* projects */}
             <TabsContent value="projects" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{projects.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <h3 className="text-4xl font-bold text-black">
+                  {projects.title}
+                </h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0 ">
                   {" "}
                   {projects.description}{" "}
                 </p>
@@ -66,8 +68,10 @@ const Resume = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{educations.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 ">
+                <h3 className="text-4xl text-black font-bold">
+                  {educations.title}
+                </h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0 ">
                   {" "}
                   {educations.description}{" "}
                 </p>
@@ -96,15 +100,15 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] pb-4">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left ">
-                  <h3 className="text-4xl font-bold">
+                  <h3 className="text-4xl text-black font-bold">
                     {skills.title}
-                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                      {skills.description}
-                    </p>
                   </h3>
+                  <p className="max-w-[600px] text-xl text-black/60 mx-auto xl:mx-0">
+                    {skills.description}
+                  </p>
                 </div>
                 <ScrollArea className="h-[350px]">
-                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+                  <ul className="grid grid-cols-2 gap-[10px] sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
                     {skills.skillList.map((item, idx) => (
                       <li key={idx}>
                         <TooltipProvider delayDuration={100}>
@@ -114,8 +118,8 @@ const Resume = () => {
                                 {item.icon}
                               </div>
                             </TooltipTrigger>
-                            <TooltipContent>
-                              <p>{item.name}</p>
+                            <TooltipContent className="bg-white">
+                              <p className="text-black">{item.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
@@ -131,8 +135,8 @@ const Resume = () => {
               value="aboutme"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl font-bold text-black">{about.title}</h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
@@ -141,8 +145,10 @@ const Resume = () => {
                       key={idx}
                       className="flex items-center justify-center xl:justify-start gap-4"
                     >
-                      <span className="text-white/60">{item.filedName}</span>
-                      <span className="text-xl">{item.fieldValue}</span>
+                      <span className="text-black/60">{item.filedName}</span>
+                      <span className="text-black text-xl">
+                        {item.fieldValue}
+                      </span>
                     </li>
                   ))}
                 </ul>

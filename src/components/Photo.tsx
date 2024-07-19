@@ -14,7 +14,7 @@ const Photo = () => {
         }}
       >
         <motion.div
-          className="w-[298px] h-[298px] xl:w-[498px] rounded-xl xl:h-[498px] mix-blend-lighten absolute "
+          className="w-[298px] h-[298px] xl:w-[498px] rounded-xl xl:h-[498px] mix-blend-darken absolute "
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -22,7 +22,7 @@ const Photo = () => {
           }}
         >
           <Image
-            className="object-contain rounded-xl"
+            className="object-contain  rounded-xl "
             src={"/assets/photos.png"}
             alt="photo"
             priority
@@ -41,7 +41,7 @@ const Photo = () => {
             cx={253}
             cy={253}
             r={250}
-            stroke="#00ff99"
+            stroke="#87CEEB"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

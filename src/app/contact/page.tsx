@@ -29,8 +29,8 @@ const Contact = () => {
               </h3>
 
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                repellendus architecto ducimus saepe .
+                I&apos;m on the lookout for opportunities to learn, grow, and
+                contribute to exciting projects.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
@@ -56,7 +56,7 @@ const Contact = () => {
                     <div className="text-[28px]">{item.icon}</div>
                   </div>
                   <div className="flex-1">
-                    <p className="text-white/60">{item.title}</p>
+                    <p className="text-black/60">{item.title}</p>
                     <p className="text-xl">{item.description}</p>
                   </div>
                 </li>

@@ -18,7 +18,7 @@ import WorkSlideBtns from "@/components/WorkSlideBtns";
 
 const Work = () => {
   const [work, setWork] = useState(works[0]);
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper: any) => {
     const currentIdx = swiper.activeIndex;
 
     setWork(works[currentIdx]);
@@ -39,13 +39,13 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold  text-outline ">
                 {work.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize ">
+              <h2 className="text-[42px] font-bold leading-none text-black group-hover:text-accent transition-all duration-500 capitalize ">
                 {work.category} project
               </h2>
               {/* description */}
-              <p className=" text-xl text-white/60">{work.description}</p>
+              <p className=" text-xl text-black/60">{work.description}</p>
               {/* stack */}
-              <ul className="flex gap-4 flex-col">
+              <ul className="flex flex-wrap gap-4 max-w-[500px]">
                 {work.stack.map((item, idx) => (
                   <li key={idx} className="text-xl capitalize text-accent">
                     {item.name}
@@ -54,14 +54,14 @@ const Work = () => {
                 ))}
               </ul>
               {/* border */}
-              <div className="border border-white/20"></div>
+              <div className="border border-black/20"></div>
               {/* button */}
               <div className="flex items-center gap-4">
                 <Link href={work.live}>
                   <TooltipProvider>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-black/5 flex justify-center items-center group ">
+                        <BsArrowUpRight className="text-black text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live project</p>
@@ -72,8 +72,8 @@ const Work = () => {
                 <Link href={work.github}>
                   <TooltipProvider>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-black/5 flex justify-center items-center group ">
+                        <BsGithub className="text-black text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github repository</p>

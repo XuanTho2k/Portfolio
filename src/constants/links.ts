@@ -9,7 +9,7 @@ export const links = [
     path: "/resume",
   },
   {
-    name: "work",
+    name: "personal Project",
     path: "/work",
   },
   {
