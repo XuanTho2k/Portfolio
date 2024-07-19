@@ -39,7 +39,7 @@ export const about = {
     },
     {
       filedName: "Email",
-      fieldValue: "ltho281@gmail.com",
+      fieldValue: "lexuantho281@gmail.com",
     },
     {
       filedName: "Language",

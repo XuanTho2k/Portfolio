@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
 import { info } from "@/constants/info";
 const Contact = () => {
+  console.log(process.env.NEXT_PUBLIC_FORM_SUBMIT_ID);
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -21,7 +22,8 @@ const Contact = () => {
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none ">
             <form
-              action=""
+              action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_FORM_SUBMIT_ID}`}
+              method="POST"
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl  "
             >
               <h3 className="text-4xl text-accent  ">
@@ -33,12 +35,13 @@ const Contact = () => {
                 contribute to exciting projects.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input name="firstName" type="text" placeholder="Firstname" />
+                <Input type="text" name="lastName" placeholder="Lastname" />
+                <Input type="email" name="email" placeholder="Email address" />
+                <Input type="number" name="number" placeholder="Phone number" />
               </div>
               <Textarea
+                name="message"
                 className="h-[200px]"
                 placeholder="Type your message here."
               />
