@@ -17,26 +17,8 @@ export const works = [
       {
         name: "mongodb",
       },
-      {
-        name: "mongoose",
-      },
-      {
-        name: "tailwindcss",
-      },
-      {
-        name: "jwt",
-      },
-      {
-        name: "react-hook-form",
-      },
-      {
-        name: "react-query",
-      },
-      {
-        name: "git",
-      },
     ],
-    name: "E-commerce",
+    name: "Spotify-clone",
     image: "",
     live: "",
     github: "",
